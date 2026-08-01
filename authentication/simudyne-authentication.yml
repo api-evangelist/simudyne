@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://pulse.simudyne.com/llms.txt + https://github.com/simudyne/pulse-sdk
+docs: https://pulse.simudyne.com/docs
+api: Pulse synthetic market data API
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+  - name: PulseApiKey
+    type: apiKey
+    in: header
+    key_prefix: pk_live_
+    env_var: SIMUDYNE_API_KEY
+    sdk_param: PulseABM(api_key="pk_live_...")
+    description: >-
+      The Pulse REST API and Python SDK authenticate with a live API key
+      (prefix "pk_live_"). The SDK reads it from the SIMUDYNE_API_KEY
+      environment variable or accepts it directly via the PulseABM(api_key=...)
+      constructor. Free-tier keys require no credit card; sign up at
+      https://pulse.simudyne.com/auth/signin.
+signup: https://pulse.simudyne.com/auth/signin
+notes: >-
+  No OpenAPI/Swagger document was discoverable at the common paths
+  (/openapi.json, /openapi.yaml, /redoc all 404), so this profile is captured
+  from the published SDK and llms.txt rather than derived from a spec. No OAuth2
+  or OpenID Connect surface is documented — key-auth only, so no scopes/
+  artifact is emitted.

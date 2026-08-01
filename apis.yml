@@ -1,7 +1,18 @@
 aid: simudyne
 name: Simudyne
-description: Simudyne is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Simudyne is a London-based enterprise simulation software company that builds
+  AI-powered, agent-based (multi-agent) simulation technology for financial
+  services and other industries. Its platform spans Simudyne Horizon (automated
+  model discovery, calibration, and validation), Simudyne Pulse (multi-agent
+  market simulation), and Simudyne Nexus (reasoning environments for training
+  and optimization). Its developer-facing product, Pulse, is a synthetic market
+  data platform exposing a REST API and a Python SDK that deliver tick-level
+  L1/L2 synthetic order book data, order events, and trades at millisecond
+  resolution for backtesting, algo development, market-impact studies, pre-trade
+  TCA, and ML/reinforcement-learning training. Simudyne also maintains classic
+  Java/Scala agent-based modeling SDK starter projects and runs on Google Cloud,
+  AWS, Oracle, Red Hat, and NVIDIA infrastructure.
 url: https://raw.githubusercontent.com/api-evangelist/simudyne/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +20,54 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://simudyne.com/
 tags:
 - Company
-apis: []
+- Simulation
+- Agent-Based Modeling
+- Synthetic Data
+- Market Data
+- Financial Services
+- Machine Learning
+- Developer SDK
+apis:
+- name: Simudyne Pulse Synthetic Market Data API
+  description: >-
+    REST API and Python SDK for tick-level synthetic market data — L1 quotes,
+    L2 order book depth, trades, and individual order events at millisecond
+    resolution, returned as Polars DataFrames. Free tier available; API-key
+    authentication (pk_live_ prefix).
+  humanURL: https://pulse.simudyne.com/docs
+  baseURL: https://pulse.simudyne.com
+  tags:
+  - Market Data
+  - Synthetic Data
+  - Order Book
+  - Financial Services
+  properties:
+  - type: Documentation
+    url: https://pulse.simudyne.com/docs
+  - type: Authentication
+    url: authentication/simudyne-authentication.yml
+  - type: Conventions
+    url: conventions/simudyne-conventions.yml
+  - type: SignUp
+    url: https://pulse.simudyne.com/auth/signin
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +76,38 @@ maintainers:
 common:
 - type: Website
   url: https://simudyne.com/
+- type: DeveloperPortal
+  url: https://pulse.simudyne.com/
+- type: Documentation
+  url: https://pulse.simudyne.com/docs
+- type: GettingStarted
+  url: https://pulse.simudyne.com/docs
+- type: SignUp
+  url: https://pulse.simudyne.com/auth/signin
+- type: Support
+  url: mailto:support@simudyne.com
+- type: Blog
+  url: https://simudyne.com/resources/resource-type/blog/
+- type: GitHubOrganization
+  url: https://github.com/simudyne
+- type: TermsOfService
+  url: https://simudyne.com/terms/
+- type: PrivacyPolicy
+  url: https://simudyne.com/privacy/
+- type: Packages
+  url: packages/simudyne-packages.yml
+- type: SDKs
+  url: packages/simudyne-packages.yml
+- type: Authentication
+  url: authentication/simudyne-authentication.yml
+- type: Conventions
+  url: conventions/simudyne-conventions.yml
+- type: LLMsTxt
+  url: llms/simudyne-llms.txt
+- type: DomainSecurity
+  url: security/simudyne-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1

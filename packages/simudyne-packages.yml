@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/simudyne + https://pulse.simudyne.com/llms.txt
+packages:
+  - language: python
+    registry: github
+    name: simudyne (pulse-sdk)
+    url: https://github.com/simudyne/pulse-sdk
+    install: pip install git+https://github.com/simudyne/pulse-api.git
+    import: simudyne
+    official: true
+    description: >-
+      Official Python client for the Pulse synthetic market data API. Returns
+      tick-level L1/L2 order book, order events, and trade data as Polars
+      DataFrames. Requires Python 3.10+. API-key auth via SIMUDYNE_API_KEY or
+      PulseABM(api_key="pk_live_...").
+    license: MIT
+  - language: java
+    registry: github
+    name: simudyne-maven-java
+    url: https://github.com/simudyne/simudyne-maven-java
+    install: Maven starter project for the Simudyne (classic) agent-based modeling SDK
+    official: true
+    description: >-
+      First-party Maven starter project demonstrating the classic Simudyne SDK
+      for agent-based / multi-agent simulation modeling in Java.
+  - language: java
+    registry: github
+    name: simudyne-sbt-java
+    url: https://github.com/simudyne/simudyne-sbt-java
+    install: sbt starter project for the Simudyne (classic) agent-based modeling SDK
+    official: true
+    description: >-
+      First-party sbt starter project for the classic Simudyne SDK for
+      agent-based / multi-agent simulation modeling.
+notes: >-
+  The Pulse Python SDK is distributed as a git-installable package (import name
+  "simudyne"), not published to PyPI as of this pass. No first-party JavaScript,
+  Go, Ruby, .NET, or Rust client library was found on npm, PyPI, Maven Central,
+  NuGet, RubyGems, or crates.io.

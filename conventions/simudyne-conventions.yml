@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: searched
+source: https://pulse.simudyne.com/llms.txt + https://github.com/simudyne/pulse-sdk
+api: Pulse synthetic market data API
+docs: https://pulse.simudyne.com/docs
+conventions:
+  transport:
+    style: REST
+    base_url: https://pulse.simudyne.com
+    also_available: Python SDK (returns Polars DataFrames)
+  authentication:
+    style: api-key
+    key_prefix: pk_live_
+    location: header
+    env_var: SIMUDYNE_API_KEY
+    cross_ref: authentication/simudyne-authentication.yml
+  response_format:
+    api: JSON over REST
+    sdk: Polars DataFrame
+    data_types: [L1 quotes, L2 order book depth, trades, individual order events]
+    resolution: millisecond
+  domain_model:
+    venues: [HKEX]
+    note: venue coverage expanding
+  idempotency:
+    documented: false
+    note: >-
+      No idempotency-key contract is documented for this read-oriented market
+      data API; no Idempotency pointer is emitted.
+  pagination:
+    documented: false
+    note: >-
+      Query is scoped by symbol/exchange/date/time-window; no cursor/offset
+      pagination scheme is documented in the SDK or llms.txt.
+  rate_limiting:
+    documented: false
+notes: >-
+  Cross-cutting semantics captured from the published SDK + llms.txt; no OpenAPI
+  was discoverable to derive richer request/response conventions.

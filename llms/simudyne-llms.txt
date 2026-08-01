@@ -1,0 +1,54 @@
+# fetched: 2026-07-21
+# method: searched
+# source: https://pulse.simudyne.com/llms.txt
+
+# Pulse — Simudyne
+
+> Tick-level L1/L2 synthetic orderbook data at millisecond resolution. Free to get started.
+
+Pulse is a synthetic market data platform built by Simudyne. It provides a REST API and a Python SDK to access simulated financial market data — including L1 quotes, L2 order book depth, trades, and individual order events — at millisecond time resolution.
+
+## Products
+
+### PulseABM
+- Status: Available now
+- A market simulator that generates tick-level synthetic orderbook data.
+- Supports L1 and L2 order book data, order flow, and trade data.
+- Data is returned via a Python SDK as Polars DataFrames.
+- Millisecond resolution.
+- Use cases: backtesting, algo development, market impact studies, pre-trade TCA, model training, reinforcement learning.
+
+### Pulse Foundation Model
+- Status: Coming soon
+- A generative large market model calibrated with real market data.
+- Predicts the next order in a sequence, generating realistic synthetic order books and market scenarios on demand.
+- Join the waiting list at https://pulse.simudyne.com/#waitlist
+
+## Pricing
+
+Pulse has a free tier. No credit card required to get started.
+
+## Key technical facts
+
+- Data resolution: millisecond
+- Available data types: L1 quotes, L2 order book depth, trades, individual order events
+- SDK: Python — `pip install git+https://github.com/simudyne/pulse-api.git`
+- SDK returns: Polars DataFrames
+- Supported venues: HKEX (expanding)
+- API authentication: API key (`pk_live_...`)
+
+## Use cases
+
+- Backtesting trading strategies
+- Algo development and testing
+- Market impact studies
+- Pre-trade transaction cost analysis (TCA)
+- Training ML and reinforcement learning models
+- Liquidity risk analysis
+
+## Links
+
+- Docs: https://pulse.simudyne.com/docs
+- Sign up: https://pulse.simudyne.com/auth/signin
+- Support: support@simudyne.com
+- Company: https://simudyne.com
