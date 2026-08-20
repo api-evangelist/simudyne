@@ -42,6 +42,15 @@ tags:
 - Agent-Based Modeling
 - Synthetic Data
 - Market Data
+- Financial-Services
+- Machine-Learning
+- Developer SDK
+tags_raw:
+- Company
+- Simulation
+- Agent-Based Modeling
+- Synthetic Data
+- Market Data
 - Financial Services
 - Machine Learning
 - Developer SDK
@@ -55,6 +64,11 @@ apis:
   humanURL: https://pulse.simudyne.com/docs
   baseURL: https://pulse.simudyne.com
   tags:
+  - Market Data
+  - Synthetic Data
+  - Order Book
+  - Financial-Services
+  tags_raw:
   - Market Data
   - Synthetic Data
   - Order Book
