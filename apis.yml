@@ -54,8 +54,8 @@ tags:
 - Agent-Based Modeling
 - Synthetic Data
 - Market Data
-- Financial-Services
-- Machine-Learning
+- Financial Services
+- Machine Learning
 - Developer SDK
 tags_raw:
 - Company
@@ -66,6 +66,8 @@ tags_raw:
 - Financial Services
 - Machine Learning
 - Developer SDK
+- Financial-Services
+- Machine-Learning
 apis:
 - name: Simudyne Pulse Synthetic Market Data API
   description: >-
@@ -79,12 +81,13 @@ apis:
   - Market Data
   - Synthetic Data
   - Order Book
-  - Financial-Services
+  - Financial Services
   tags_raw:
   - Market Data
   - Synthetic Data
   - Order Book
   - Financial Services
+  - Financial-Services
   properties:
   - type: Documentation
     url: https://pulse.simudyne.com/docs
