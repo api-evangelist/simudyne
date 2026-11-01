@@ -64,6 +64,91 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Simudyne is a company surfaced as a portfolio company of techstars and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Simudyne is a London-based enterprise simulation software company that builds AI-powered, agent-based (multi-agent) simulation technology for financial services and other industries. Its platform spans Simudyne Horizon (automated model discovery, calibration, and validation), Simudyne Pulse (multi-agent market simulation), and Simudyne Nexus (reasoning environments for training and optimization). Its developer-facing product, Pulse, is a synthetic market data platform exposing a REST API and a Python SDK that deliver tick-level L1/L2 synthetic order book data, order events, and trades at millisecond resolution for backtesting, algo development, market-impact studies, pre-trade TCA, and ML/reinforcement-learning training. Simudyne also maintains classic Java/Scala agent-based modeling SDK starter projects and runs on Google Cloud, AWS, Oracle, Red Hat, and NVIDIA infrastructure.
 
-Backed by: techstars — https://simudyne.com/
+**Areas:** Company · Simulation · Agent-Based Modeling · Synthetic Data · Market Data · Financial Services · Machine Learning · Developer SDK
+
+## Simudyne on APIs.io
+
+Everything profiled for Simudyne is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/simudyne/](https://apis.io/providers/simudyne/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Simudyne Pulse Synthetic Market Data API](https://apis.io/apis/simudyne/simudyne-pulse-synthetic-market-data-api/) — REST API and Python SDK for tick-level synthetic market data — L1 quotes, L2 order book depth, trades, and individual order events at millisecond…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Simudyne Authentication](https://apis.io/security/simudyne/simudyne-authentication/)
+- [Simudyne Domain Security](https://apis.io/security/simudyne/simudyne-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://simudyne.com/)
+- [Documentation](https://pulse.simudyne.com/docs)
+- [Getting started](https://pulse.simudyne.com/docs)
+- [Sign up](https://pulse.simudyne.com/auth/signin)
+- [Blog](https://simudyne.com/resources/resource-type/blog/)
+- [Terms of service](https://simudyne.com/terms/)
+- [Privacy policy](https://simudyne.com/privacy/)
+- [GitHub](https://github.com/simudyne)
+
+## API Evangelist rating
+
+**Kin Score 25.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 57.1 |
+| Access clarity | 34.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.2** — Securities & Market Data
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/simudyne/](https://apis.io/providers/simudyne/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Simudyne: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/simudyne/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
